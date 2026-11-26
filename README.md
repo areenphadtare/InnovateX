@@ -1,4 +1,4 @@
-# 🏥 SurgiSync AI — Intelligent Operating Theatre Assistant
+# 🏥 Neurova AI — Intelligent Operating Theatre Assistant
 
 <p align="center">
   <img src="https://img.shields.io/badge/AI-Powered-blueviolet?style=for-the-badge" />

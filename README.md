@@ -173,6 +173,8 @@ flowchart TD
 
 ## 🔄 Core Workflow
 
+The frontend prototype presents this workflow as six reviewable stages: **Pre-op context → Live case → Review queue → Operative note → Case summary → Closeout & handover**, with a separate follow-up tracker in the main navigation. Starting a case requires identity confirmation; ending capture opens the review queue; only after pending events are resolved can a draft note be generated. Closeout includes a demo-only review acknowledgement, receiving-team handover, a print-ready HTML clinical summary, a structured JSON bundle, and traceable addenda (separate audit-trail notes that do not overwrite the original note). The printable summary contains clinician-entered medication order fields (medicine, strength, dose, route, frequency, duration, and optional quantity) and post-operative instructions; no medications or treatment recommendations are generated. Incomplete medication orders block closeout. A follow-up interval entered at closeout creates a scheduled item in the tracker when the case is closed, with its date calculated from closeout. The tracker shows the synthetic operation summary, visit history, clinician-entered current condition, and next-visit date. Follow-up entries remain in browser memory for the current page session only. The interface uses synthetic demonstration data and does not create a clinical signature, persist clinical records, or transmit to an EHR.
+
 ```mermaid
 flowchart TD
     A["Start Surgical Session"] --> B["Retrieve Authorized Patient Data"]
